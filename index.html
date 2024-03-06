@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Good fonts:
+1 - protest revolution
+2 - rubik scribber 
+3 - honk 
+4 - rubik doodle shadow 
+5 - rubik vinyl -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Rubik Vinyl' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Figtree' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Nabla' rel='stylesheet'>
+    <title>Dylan Tremmel | Showcase </title>
+    <style>
+        body {
+            font-family: 'Rubik Vinyl', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #979C59; 
+            animation: fadeInAnimation ease 3s;
+    		animation-iteration-count: 1;
+    		animation-fill-mode: forwards;
+        }
+        
+        h1 {
+        	color: #3C3F0A;
+        }
+        
+        #title {
+        	font-size: 4.2em;
+        	text-shadow: 1px 1px 2px #545806;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+        }
+        
+        .project {
+            background-color: #5E6130; 
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+        
+        .project:hover {
+        	background-color: #BCC421;
+        	transform: scale(1.01);
+        }
+        
+        .project h3 {
+            margin-top: 0;
+            color: white;
+            font-family: "Figtree";
+        }
+        
+        p {
+        	color: white;
+        	font-family: "Figtree";
+        }
+        
+        a {
+        	text-decoration: none;
+        	color: white;
+        	font-family: "Nabla";
+        	font-size: 22px;
+        }
+        
+        @keyframes fadeInAnimation {
+    		0% {
+        		opacity: 0;
+    		}
+    		100% {
+        		opacity: 1;
+    		}
+		}
+
+    </style>
+</head>
+<body>
+	<center><h1 id="title">Top Projects</h1></center>
+	<center><h2>by Dylan Tremmel</h2></center>
+    <div class="container">
+        <center><h1>ArcGIS Projects</h1></center>
+        <div class="projects-grid">
+            <div class="project">
+                <h3 style="font-size: 22px;">Fishing Safety Analysis</h3>
+                <p>In this demonstration, I illustrated how consumption warnings and advisories regarding 
+                fishing are likely to be implemented in areas near harmful algal blooms within 
+                Morris County, New Jersey. By incorporating the layer of NJ trout-stocked streams, 
+                I aimed to emphasize the prevalence of seemingly optimal fishing spots that may harbor fish 
+                unsafe for consumption due to environmental factors.</p>
+                <h3>Tools: ArcGIS online, Wordpress</h3>
+                <a href="https://madisoneri.org/map-drawer/food-environments/fish-advisories/">View Project</a>
+            </div>
+            <div class="project">
+                <h3 style="font-size: 22px;">Printing Madison</h3>
+                <p>For this project, I digitized the location of a handful of printers in the suburb
+                 of Madison, New Jersey. Using a free, legal website called Wigle, I collected data from 55 randomly-selected 
+                 WiFi networks and put them into a spreadsheet. I then filtered out the networks with the word "print" or another related term
+                 in the SSID (network name) and put them into a separate spreadsheet. With that data, I made a Google My Map showcasing the coordinates of
+                 the printers. I then digitized the buildings in which those printers can be found using ArcGIS pro. </p>
+                 <h3>Tools: Google Sheets, Wigle WiFi, Google My Maps, ArcGIS Pro</h3>
+                <a href="#">[In progress]</a>
+            </div>
+            <div class="project">
+                <h3 style="font-size: 22px;">Routing Madison</h3>
+                <p> For this project, I took a similar approach to the 'Printing Madison' 
+                project. However, this time around, I switched gears and targeted 
+                routers instead of printers. My goal was to identify routers with either no 
+                encryption or weak WEP encryption. I then flagged these vulnerable routers to shed light on one of the myriad tactics
+ 				hackers can use to exploit a geographic area through basic router attacks."</p>
+ 				<h3>Tools: Google Sheets, Wigle WiFi, Google My Maps, ArcGIS Pro</h3>
+                <a href="#">[In progress]</a>
+            </div>
+            <div class="project">
+                <h3 style="font-size: 22px;">Common Raven Sightings</h3>
+                <p>For this mini project, I received a comprehensive dataset from eBird detailing bird species sightings in
+                 Madison, NJ, along with their respective frequented locations. After isolating data specifically related to "Common Ravens," I transferred it to a separate spreadsheet. Subsequently, I imported this refined dataset into ArcGIS Pro software, where I visualized it as a heatmap to effectively represent sighting frequencies. To ensure clarity and avoid any potential misinterpretations associated with emergency connotations, I adjusted the color scheme from the standard 
+                red/yellow to blue/green, as the former hues often evoke urgent connotations.</p>
+                <h3>Tools: Google Sheets, eBird, ArcGIS Pro</h3>
+                <a href="#">View Project</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <center><h1>Mobile Application</h1></center>
+        <div class="projects-grid">
+            <div class="project">
+                <h3 style="font-size: 22px;">RibbitReport</h3>
+                <p>RibbitReport is your go-to platform for amphibian 
+                enthusiasts across the United States to share their sightings of frogs, 
+                salamanders, and other fascinating amphibians. Whether you're a seasoned 
+                herpetologist or simply passionate about nature, RibbitReport empowers 
+                users to contribute to a collective database of amphibian observations. 
+                With easy sorting options by state and zip code, users can swiftly locate 
+                sightings in their vicinity or explore amphibian activity across the nation. 
+                Join our community and become part of a nationwide effort to document and 
+                appreciate these captivating creatures!</p>
+                <h3>Tools: VSCode <br> 
+                Languages: Python, SQL <br>
+                Frameworks: Flask, SQAlchemy</h3>
+                <a href="#">View Project</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <center><h1>Research Paper</h1></center>
+        <div class="projects-grid">
+            <div class="project">
+                <h3 style="font-size: 22px;">Hacker Dolphins! Echolocation and Cyber Security</h3>
+                <p>This paper focuses on the utilization and ethics of echolocation in cyber exploits and 
+                potential security measures.</p>
+                <a href="#">View Paper</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
